@@ -3,6 +3,8 @@
 #Download data and unzip
 if(!file.exists("./Exploratory_Data_Analysis")) 
 {dir.create("./Exploratory_Data_Analysis")}
+download.file("http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
+              destfile = "./Exploratory_Data_Analysis/Electric_power_consumption.zip")
 unzip(zipfile = "./Exploratory_Data_Analysis/Electric_Power_Consumption.zip")
 
 #Read data
