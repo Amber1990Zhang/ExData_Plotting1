@@ -16,7 +16,7 @@ week1data <-  read.table(text = grep("^[1,2]/2/2007",readLines(files),
 names(week1data) <- tolower(names(week1data))
 
 #Convert date and time to specific format
-week1data$date <- as.Date(week1data$date, '%d/ %m/ %y')
+week1data$date <- as.Date(week1data$date, '%d/ %m/ %Y')
 week1data$datetime <- as.POSIXct(paste(week1data$date, week1data$time))   
                    
 #Open device
